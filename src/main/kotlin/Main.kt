@@ -1,7 +1,22 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import java.util.*
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    var fruit = arrayOf("Apple", "Bannana", "Orange", "Plum")
+    var numOfFruits = intArrayOf(5, 4 , 3, 2, 1)
+    var fruiNumStrings = arrayOf("5", "4", "3", "2", "1")
+    var x = arrayListOf<String>() //<- strictest version
+
+
+    var bothArrays = arrayOf<Array<String>>(fruit, fruiNumStrings)
+
+    println("Both Arrays: $bothArrays")
+
+    println(bothArrays[1][1])
+    println(Arrays.toString(fruit))
+
+    for (i in fruit){
+
+        println(i)
+    }
+
 }
